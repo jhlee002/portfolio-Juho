@@ -11034,6 +11034,224 @@ html {
   }
 }
 
+.final-project-info {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.final-project-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.final-project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+.final-project-info h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.final-project-info p,
+.final-project-info li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.final-project-info ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .final-project-info {
+        padding-left: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .final-project-info ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+.about-content {
+    margin-top: 40px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.about-list i {
+    min-width: 24px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.about-list span {
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.about-desc {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* 모바일 대응 */
+@media (max-width: 991px) {
+    .about-list li {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-desc {
+        text-align: left;
+    }
+}
+
+.about-list li {
+    background: rgba(0,0,0,0.03);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* 약력 영역 */
+.about-history-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.about-history {
+    border-left: 3px solid #1abc9c;
+    padding-left: 20px;
+
+    /* 추가 */
+    max-width: 500px;
+    margin: 0 auto;   /* 🔥 가운데 정렬 핵심 */
+}
+
+.history-item {
+    margin-bottom: 25px;
+    text-align: left;  /* 내용은 왼쪽 정렬 유지 */
+}
+
+.history-item::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #1abc9c;
+    border-radius: 50%;
+}
+
+.history-date {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.history-content {
+    font-size: 1.1rem;
+}
+
+.about-section {
+    min-height: 800px;
+    height: auto;
+    padding-bottom: 100px;
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-history {
+    max-width: 500px;
+    margin: 0 auto;
+    border-left: 3px solid #1abc9c;
+    padding-left: 25px;
+}
+
+.history-item {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.history-item:last-child {
+    margin-bottom: 0;
+}
+
+.trouble-btn {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.trouble-modal {
+    color: #2c3e50;
+    text-align: left;
+}
+
+.trouble-modal h5 {
+    font-weight: bold;
+}
+
+.trouble-modal h6 {
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+.trouble-modal p,
+.trouble-modal li {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.toy-project-list {
+    text-align: center;   /* 🔥 핵심 */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.toy-item {
+    margin-bottom: 25px;
+}
+
+.toy-item a {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.toy-item a:hover {
+    text-decoration: underline;
+}
+
+.toy-item p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;

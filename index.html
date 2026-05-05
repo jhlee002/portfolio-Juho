@@ -54,7 +54,7 @@
             </div>
         </header>
         <!-- About Section-->
-        <section class="page-section" id="about" style="height: 800px; font-family: Gamja Flower, sans-serif; font-weight: 400;font-style: normal;">
+        <section class="page-section about-section" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary">About</h2>
@@ -65,38 +65,79 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">
-                        <i class="fa-solid fa-desktop"></i> HTML5, CSS, JavaScript, JQuery, Bootstrap, ReactJs<br>
-                        <i class="fa-solid fa-server"></i> DB(Oracle21c, MySQL, MariaDB), Java, Servlet/JSP, Spring, Spring Boot<br>
-                        <i class="fa-solid fa-screwdriver-wrench"></i> Visual Studio Code, Eclipse, Sql Developer, Spring Tool Suite, MySQL Workbench, HeidiSQL</p>
+                <div class="row about-content">
+                    <!-- 왼쪽 -->
+                    <div class="col-lg-6">
+                        <ul class="about-list">
+                            <li>
+                                <i class="fa-solid fa-desktop"></i>
+                                <span>HTML5, CSS, JavaScript, JQuery, Bootstrap, ReactJs</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-server"></i>
+                                <span>DB(Oracle21c, MySQL, MariaDB), Java, Servlet/JSP, Spring, Spring Boot</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span>Visual Studio Code, Eclipse, Sql Developer, Spring Tool Suite, MySQL Workbench, HeidiSQL</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4 me-auto"><p class="lead">
-                        <i class="fa-solid fa-highlighter"></i> ChatGPT를 활용한 AI 웹앱(자바,파이썬) 서비스 개발자 양성 과정 수료중
-                                                                <br> 글로벌아이티(IT)인재개발학원<br> 
-                        <!-- 추가할 내용 있으면 이용, 그렇지 않으면 삭제하기 -->
-                        <!-- <i class="fa-solid fa-highlighter"></i> SQL-D (2024.09.20)</p> -->
+
+                    <!-- 오른쪽 -->
+                    <div class="col-lg-6">
+                        <ul class="about-list">
+                            <li>
+                                <i class="fa-solid fa-highlighter"></i>
+                                <span>ChatGPT를 활용한 AI 웹앱(자바, 파이썬) 서비스 개발자 양성 과정 수료중</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-school"></i>
+                                <span>글로벌아이티(IT)인재개발학원</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-lg-8 mx-auto mt-5" style="font-size: 23px;">
+                    <div class="col-lg-8 mx-auto mt-5 about-desc">
                         비전공자로 시작하긴 했으나 풀스택 과정을 따라가기 위해 수업도 5일 미만으로 빠지는 등 열심히 공부했습니다.
                         두 번의 팀프로젝트에 참여하면서 개선할 부분도 찾았고, 모든 것이 의미가 없지는 않았습니다.
                     </div>
                 </div>
                 <!-- About Section Button-->
-                <!-- <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div> -->
             </div>
+
+            <!-- 약력 Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="text-center about-history-title">약력</h3>
+
+                    <div class="about-history">
+                        <div class="history-item">
+                            <span class="history-date">2017/02 ~ 2023/03</span>
+                            <span class="history-content">평택대학교 데이터정보학과</span>
+                        </div>
+
+                        <div class="history-item">
+                            <span class="history-date">2025/08 ~ 2026/02</span>
+                            <span class="history-content">글로벌아이티(IT)인재개발학원</span>
+                        </div>
+
+                        <div class="history-item">
+                            <span class="history-date">2026/02 ~ 2026/04</span>
+                            <span class="history-content">개발 역량 보완 학습 및 Java/Spring 백엔드 직무 입사 지원</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <!-- MiniPortfolio Section-->
+        <!-- FinalPortfolio Section-->
         <section class="page-section bg-primary text-white mb-0" id="contact">
             <div class="container">
-                <!-- MiniPortfolio Section Heading-->
+                <!-- FinalProject Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Final Project</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -105,35 +146,45 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    
-                    <!-- Portfolio Item 1-->
-                    
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <video autoplay loop controls muted>
-                            <source src="gifFinalproject.mp4" type="video/mp4">
+                <div class="row align-items-center">
+                    <!-- 왼쪽 영역: 영상 -->
+                    <div class="col-lg-7 text-center">
+                        <video autoplay loop muted width="100%">
+                            <source src="finalProject_full.mp4" type="video/mp4">
                         </video>
-                        <!-- <div class="card">
-                            <a href="https://www.youtube.com/watch?v=D9xGtVwuLAc" target="_blank" >
-                                <img class="img-fluid" src="img/playground_logo.png" alt="playground" style="border-radius: 5px; border-bottom: 1px solid black;"/>
-                            </a>
-                            <div class="card-body text-dark">
-                                <h5 class="card-title text-center">PlayGround</h5>
-                                <h6 class="card-text"><i class="fa-solid fa-desktop"></i> HTML, CSS, JavaScript, JQuery, Bootstrap, Thymeleaf, React.js<br>
-                                    <i class="fa-solid fa-server"></i> MariaDB, Java, SpringBoot</h6>
-                                <p class="card-text" style="font-family: 'Jua', sans-serif; min-height: 15vw;">
-                                    
-                                    <mark>MVC 패턴</mark>을 적용한 <mark>게임판매 쇼핑몰 웹 페이지</mark>입니다. 파편화된 플랫폼들의 게임을 한사이트에 모아서 볼 수 있게 하였습니다. 상품 목록부터 결제까지 실제 판매에 필요한 요소들을 springboot 및 web api를 통해 구현하였습니다.<br>
-                                    <mark>PL</mark>로서 맡은 부분의 코딩과 함께 팀원의 각자 맡은 부분의 코딩과 디버깅에 도움을 주었습니다.<br>
-                                    <br>전반적인 초기설정을 담당하였습니다. 메인페이지/상품목록의 카테고리 분류 검색 및 페이징 처리, 소셜로그인, 회원가입/수정/탈퇴, 아이디/비밀번호 찾기, 상품등록/수정, 찜/장바구니, 결제, 주문내역, 마이페이지를 담당하였습니다. 
-                                    <br><a href="https://github.com/andrewjo123/playcenter" target="_blank">여기</a>에서 코드를 확인 하실 수 있습니다.
-                                </p>
-                            </div>
-                       </div> -->
                     </div>
+
+                    <!-- 오른쪽 영역: 프로젝트 설명 -->
+                    <div class="col-lg-5 final-project-info">
+                        <h1>Catch-A-Bite</h1>
+
+                        <h2 class="mt-4">프로젝트 기획</h2>
+                        <p>
+                            기존 배달 플랫폼의 높은 중개 수수료, 광고비, 배달료 부담으로 인해
+                            점주와 소비자 모두에게 발생하는 문제를 개선하고자 기획한
+                            대안 배달 플랫폼입니다.
+                        </p>
+
+                        <h3>기획 목표</h3>
+                        <ul>
+                            <li>점주의 수익성 개선</li>
+                            <li>소비자의 음식 가격 부담 완화</li>
+                            <li>사용자·사업자·라이더가 함께 사용하는 플랫폼 구현</li>
+                            <li>주문, 메뉴, 리뷰 데이터를 통합 제공하는 구조 설계</li>
+                        </ul>
+
+                        <h3>주요 사용자</h3>
+                        <p>
+                            일반 사용자, 음식점 사업자, 라이더를 대상으로 각각의 기능을 분리하여
+                            실제 배달 서비스 흐름에 맞게 구성했습니다.
+                        </p>
+                    </div>
+                </div>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jhlee002/catch-a-bite/tree/main" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                <button type="button" class="btn btn-light trouble-btn" data-bs-toggle="modal" data-bs-target="#troubleModal">🔧 트러블 슈팅 보기</button>
+            </div>
         </section>
+        
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -147,15 +198,29 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    
-                    <!-- Portfolio Item 2-->
-                    
-                    <!-- Portfolio Item 3-->
-                    
-                    <!-- Portfolio Item 4-->
-                    
-                    
+                    <div class="toy-project-list text-center">
+
+                        <div class="toy-item">
+                            <a href="brand/index.html" target="_blank">1. 브랜드홍보페이지 - 나이키에어맥스</a>
+                            <p>HTML, CSS, transition, animation, fontawesome, google font</p>
+                        </div>
+
+                        <div class="toy-item">
+                            <a href="brand2/index.html" target="_blank">2. 브랜드홍보페이지 - 맘스터치</a>
+                            <p>HTML, CSS, transition, animation, fontawesome</p>
+                        </div>
+
+                        <div class="toy-item">
+                            <a href="company/index.html" target="_blank">3. 글로벌아이티 교육센터 웹사이트</a>
+                            <p>html, css, bootstrap, 반응형웹</p>
+                        </div>
+
+                        <div class="toy-item">
+                            <a href="cocacola/index_v2.html" target="_blank">4. 한국 코카-콜라 홈페이지</a>
+                            <p>html, css, bootstrap, 반응형웹, google font</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,19 +231,19 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Contact</h4>
-                        <!-- <p class="lead mb-0">
-                            Tel: 010-4840-7546
+                        <p class="lead mb-0">
                             <br />
                             E-mail: tiger98210@gmail.com
-                        </p> -->
+                        </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jhlee002/portfolio-Juho" target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        
+                        <!-- Footer About Text-->
+                        <div class="col-lg-4">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,6 +253,7 @@
             <div class="container"><small>Copyright &copy; Lee JuHo 2026</small></div>
         </div>
         <!-- Portfolio Modals-->
+
         <!-- Portfolio Modal 1-->
         
         <!-- Portfolio Modal 2-->
@@ -201,5 +267,46 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Troubleshooting Modal -->
+        <div class="modal fade" id="troubleModal" tabindex="-1" aria-labelledby="troubleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content trouble-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="troubleModalLabel">Final Project 트러블 슈팅</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h6>문제 상황</h6>
+                        <p>
+                            배달 진행 과정에서 DeliveryStatus(라이더)와 OrderStatus(주문고객/점주)가
+                            호환되지 않아 배달 단계가 연동되지 않는 문제가 발생했습니다.
+                        </p>
+
+                        <h6>원인</h6>
+                        <p>
+                            배달 상태를 enum 값으로 관리하고 있었지만,
+                            front와 back에서 사용하는 상태 값이 서로 다르게 설정되어 있었습니다.
+                        </p>
+
+                        <h6>해결 방법</h6>
+                        <ul>
+                            <li>DeliveryStatus와 OrderStatus에서 사용할 enum 값을 통일</li>
+                            <li>front와 back의 상태 값을 동일하게 수정</li>
+                            <li>back-end에서 명령 기반 방식을 적용</li>
+                            <li>하나의 메서드로 두 가지 상태 전이가 함께 이루어지도록 수정</li>
+                            <li>DeliveryStatus와 OrderStatus가 병행 진행되도록 개선</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
