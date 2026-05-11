@@ -99,12 +99,13 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <!-- 필요없다면 제거하기 -->
+                <!-- <div class="row">
                     <div class="col-lg-8 mx-auto mt-5 about-desc">
                         비전공자로 시작하긴 했으나 풀스택 과정을 따라가기 위해 수업도 5일 미만으로 빠지는 등 열심히 공부했습니다.
                         두 번의 팀프로젝트에 참여하면서 개선할 부분도 찾았고, 모든 것이 의미가 없지는 않았습니다.
                     </div>
-                </div>
+                </div> -->
                 <!-- About Section Button-->
             </div>
 
@@ -128,7 +129,34 @@
                             <span class="history-date">2026/02 ~ 2026/04</span>
                             <span class="history-content">개발 역량 보완 학습 및 Java/Spring 백엔드 직무 입사 지원</span>
                         </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- PR Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-pr">
+                        <h3 class="about-pr-title">소개</h3>
+
+                        <p>
+                            사용자 흐름과 데이터 구조를 함께 고민하는 
+                            <strong>Java 백엔드 개발자 이주호</strong>입니다.
+                        </p>
+
+                        <p>
+                            Catch-A-Bite 프로젝트에서 사용자·점주·라이더가 함께 사용하는
+                            배달 플랫폼을 설계하며, 상태 흐름 관리와 권한 처리의 중요성을 경험했습니다.
+                        </p>
+
+                        <p>
+                            Spring Boot와 JPA 기반의 REST API 설계, Spring Security를 활용한
+                            세션 인증 처리, React 연동을 통한 서비스 흐름 구현 경험을 가지고 있습니다.
+                        </p>
+
+                        <p>
+                            단순한 기능 구현을 넘어, 유지보수성과 확장성을 고려한 구조 설계를 지향합니다.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -182,22 +210,23 @@
                 </div>
                 <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jhlee002/catch-a-bite/tree/main" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                 <button type="button" class="btn btn-light trouble-btn" data-bs-toggle="modal" data-bs-target="#troubleModal">🔧 트러블 슈팅 보기</button>
+                <button type="button" class="btn btn-light trouble-btn ms-2" data-bs-toggle="modal" data-bs-target="#collabModal">🤝 협업 개선점 보기</button>
             </div>
         </section>
         
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
+        <!-- <section class="page-section portfolio" id="portfolio">
+            <div class="container"> -->
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Toy Project</h2>
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Toy Project</h2> -->
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <!-- <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div> -->
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                     <div class="toy-project-list text-center">
 
                         <div class="toy-item">
@@ -221,9 +250,10 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
-        </section>
+                </div> -->
+
+            <!-- </div>
+        </section> -->
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -308,5 +338,47 @@
             </div>
         </div>
 
+        <!-- Collaboration Improvement Modal -->
+        <div class="modal fade" id="collabModal" tabindex="-1" aria-labelledby="collabModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content trouble-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="collabModalLabel">협업 및 통합 테스트 경험을 통한 개선점</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            Catch-A-Bite 프로젝트에서는 Rider 기능의 Back-End 개발을 주로 담당하였습니다.
+                            기능 구현 과정에서 API 설계와 비즈니스 로직 개발에 집중하였지만,
+                            Front-End와의 실제 연동 테스트 및 화면 단위 검증을 충분히 병행하지 못한 아쉬움이 있었습니다.
+                        </p>
+
+                        <p>
+                            프로젝트 후반부에서 일부 기능의 데이터 구조 및 응답 형식 차이로 인해
+                            연동 과정에서 추가 조정이 필요했고, 이를 통해 다음과 같은 점의 중요성을 크게 느꼈습니다.
+                        </p>
+
+                        <h6>개선점</h6>
+                        <ul>
+                            <li>Front-End와 Back-End 간의 초기 API 명세 공유</li>
+                            <li>기능 개발 중간 단계의 지속적인 연동 테스트</li>
+                            <li>상태값(Enum), DTO 구조, 응답 포맷의 사전 합의</li>
+                            <li>구현 완료 이후가 아닌 개발 단계부터의 협업 검증</li>
+                        </ul>
+
+                        <p>
+                            이 경험 이후에는 Back-End 개발을 진행하더라도 단순 API 구현에 그치지 않고,
+                            실제 화면 흐름과 사용자 동작까지 고려하며 Front-End 개발자와 지속적으로 소통하는
+                            개발 방식을 중요하게 생각하게 되었습니다.
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

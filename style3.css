@@ -11252,6 +11252,27 @@ html {
     font-size: 1rem;
 }
 
+.about-pr {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-pr-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.about-pr p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    word-break: keep-all;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
